@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>epam_task</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <h1>Library catalogue</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search by name...">
+        </div>
+        <div class="genre-filter">
+            <button class="genre-filter-btn active" data-genre="all">All</button>
+            <button class="genre-filter-btn" data-genre="classic">Classic</button>
+            <button class="genre-filter-btn" data-genre="romance">Romance</button>
+            <button class="genre-filter-btn" data-genre="gothic">Gothic</button>
+            <button class="genre-filter-btn" data-genre="philosophical">Philosophical</button>
+            <button class="genre-filter-btn" data-genre="adventure">Adventure</button>
+        </div>
+    </header>
+
+
+    <main class="catalogue-container" id="bookGrid">
+
+        <article class="book-card" data-title="Pride and Prejudice" data-genre="classic,romance,social satire">
+
+            <img src="https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg" alt="Pride and Prejudice cover"
+                class="book-cover">
+
+            <div class="book-info">
+                <h3 class="book-title">Pride and Prejudice</h3>
+                <p class="book-author">Jane Austen</p>
+
+                <p class="book-description">
+                    The story centers on the Bennet family, particularly the sharp-witted and independent
+                    Elizabeth Bennet, who lives in a society where marriage is often treated as a matter of
+                    financial necessity rather than personal happiness. Under constant pressure from her
+                    mother to secure a suitable match, Elizabeth navigates social expectations, family
+                    obligations, and her own strong sense of morality. The arrival of the wealthy and
+                    good-natured Mr. Bingley, along with his reserved and proud friend Mr. Darcy, disrupts the
+                    calm order of the neighborhood. Through misunderstandings, personal growth, and moments of
+                    self-reflection, the novel explores themes of class, pride, prejudice, and the true nature
+                    of love.
+                </p>
+
+                <div class="genre-list">
+                    <span class="genre-badge">Classic</span>
+                    <span class="genre-badge">Romance</span>
+                    <span class="genre-badge">Social Satire</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="book-card" data-title="Moby-Dick" data-genre="adventure,epic,philosophical">
+
+            <img src="https://covers.openlibrary.org/b/isbn/9780142437247-L.jpg" alt="Moby-Dick cover"
+                class="book-cover">
+
+            <div class="book-info">
+                <h3 class="book-title">Moby-Dick</h3>
+                <p class="book-author">Herman Melville</p>
+
+                <p class="book-description">
+                    Narrated by the wandering and reflective sailor Ishmael, this novel follows the perilous
+                    journey of the whaling ship Pequod as it sails across the vast and unforgiving oceans. The
+                    crew is commanded by the obsessive and enigmatic Captain Ahab, whose sole purpose is to
+                    hunt down Moby Dick, the legendary white whale that maimed him years before. What begins as
+                    a whaling expedition slowly transforms into a dark meditation on obsession, fate, and the
+                    limits of human will. Rich in symbolism and philosophical depth, the novel examines
+                    humanity’s struggle against the overwhelming power of nature.
+                </p>
+
+                <div class="genre-list">
+                    <span class="genre-badge">Adventure</span>
+                    <span class="genre-badge">Epic</span>
+                    <span class="genre-badge">Philosophical</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="book-card" data-title="The Picture of Dorian Gray"
+            data-genre="gothic,philosophical,psychological">
+            <img src="https://covers.openlibrary.org/b/isbn/9780141439570-L.jpg" alt="The Picture of Dorian Gray cover"
+                class="book-cover">
+
+            <div class="book-info">
+                <h3 class="book-title">The Picture of Dorian Gray</h3>
+                <p class="book-author">Oscar Wilde</p>
+
+                <p class="book-description">
+                    Set in the refined yet morally conflicted world of Victorian London, the novel tells the
+                    story of Dorian Gray, a young man of extraordinary beauty whose portrait is painted by the
+                    artist Basil Hallward. Influenced by the cynical and hedonistic philosophy of Lord Henry
+                    Wotton, Dorian becomes obsessed with youth and pleasure. After wishing that the portrait
+                    would age in his place, his desire is mysteriously fulfilled. As Dorian’s outward
+                    appearance remains untouched by time, the hidden painting becomes a disturbing reflection
+                    of his moral decay, raising profound questions about art, beauty, and responsibility.
+                </p>
+
+                <div class="genre-list">
+                    <span class="genre-badge">Gothic</span>
+                    <span class="genre-badge">Philosophical</span>
+                    <span class="genre-badge">Psychological</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="book-card" data-title="Jane Eyre" data-genre="bildungsroman,gothic romance,classic">
+
+            <img src="https://covers.openlibrary.org/b/isbn/9780141441146-L.jpg" alt="Jane Eyre cover"
+                class="book-cover">
+
+            <div class="book-info">
+                <h3 class="book-title">Jane Eyre</h3>
+                <p class="book-author">Charlotte Brontë</p>
+
+                <p class="book-description">
+                    The novel follows the life of Jane Eyre, an orphaned girl who endures a harsh and lonely
+                    childhood marked by cruelty and neglect. Through intelligence, moral strength, and quiet
+                    determination, Jane grows into an independent young woman and becomes a governess at the
+                    mysterious Thornfield Hall. There she forms a deep emotional connection with her employer,
+                    the brooding Edward Rochester. However, their relationship is threatened by dark secrets
+                    hidden within the estate. The novel explores themes of identity, love, morality, and the
+                    struggle for equality in a rigid social order.
+                </p>
+
+                <div class="genre-list">
+                    <span class="genre-badge">Bildungsroman</span>
+                    <span class="genre-badge">Gothic Romance</span>
+                    <span class="genre-badge">Classic</span>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

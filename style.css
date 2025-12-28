@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #5a5353;
+    --success-color: #2ecc71;
+    --danger-color: #e74c3c;
+    --dark-bg: #312d2d;
+    --light-bg: #d6d4cc;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Baskervville', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-header {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--dark-bg);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    font-family: "Tangerine";
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.search-container {
+    margin-top: 15px;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.card-form h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: var(--dark-bg);
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.catalogue-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.book-card {
+    background: #e7e6e3;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+
+    transition: transform 0.2s;
+    border: 1px solid var(--primary-color);
+    border-left-width: 5px;
+}
+
+.book-card:hover {
+    transform: translateY(-2px);
+}
+
+.book-cover {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 4px;
+}
+
+.book-title {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #2c3e50;
+}
+
+.book-author {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.book-description {
+    font-size: 0.9rem;
+    color: #454343;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.genre-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 6px 0 10px;
+}
+
+.genre-badge {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 999px;
+    background-color: #c8c8c8;
+    color: #3c3c3c;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.genre-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.genre-filter-btn {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    border-radius: 999px;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: white;
+}
+
+.genre-filter-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.genre-filter-btn.active {
+    background-color: white;
+    color: var(--dark-bg);
+    font-weight: 600;
+}
