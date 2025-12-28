@@ -13,6 +13,6 @@ The system must allow the reader to:
 - filter the book by genre
 - get a list of books
 
-## Designe
+## Design
 
 <img width="902" height="637" alt="image" src="https://github.com/user-attachments/assets/3962cc37-2d43-4391-ad28-93a406731731" />
